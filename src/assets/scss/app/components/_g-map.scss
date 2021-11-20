@@ -1,0 +1,45 @@
+// 
+// Google map
+// 
+.g-map {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    .g-map-canvas {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $gray-100;
+    }
+}
+.contact-map {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 11%;
+    .g-map-canvas {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $gray-100;
+    }
+}
+
+.gMap {
+    width: -webkit-fill-available;
+}
+
+@include media-breakpoint-down(xl) {
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(sm) {
+    .g-map, .contact-map {
+        padding-bottom: 20%;
+    }
+}
